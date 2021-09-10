@@ -1,0 +1,21 @@
+.box {
+    width: 400px;
+    height: 200px;
+    background-color: blue;
+    margin: 20px;
+    
+  }
+  
+  img {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+  }
+  
+  .cover {
+    object-fit: cover;
+  }
+  
+  .contain {
+    object-fit: contain;
+  }

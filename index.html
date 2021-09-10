@@ -7,245 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="styles/style-homepage.css">
         <style>
 
          
 
-          form{
-            position: relative;
-          }
-            fieldset{
-              margin: auto;
-              box-sizing: border-box;
-              width: 30vw;
-              position: relative;
-              font-family: 'Poppins', sans-serif;
-              box-shadow: 0px 0px 4px 0.5px black;
-            }
-            legend{
-              background-color: black;
-              color: white;
-              font-size: 2.2vmax;
-              padding: 5px;
-              
-            }
-            ul{
-              margin: 0 ;
-              padding: 0;
-              position: relative;
-              
-            }
-
-            li{
-              list-style: none;
-              margin-left: 0  ;
-              position: relative;
-              margin: 0;
-              
-            
-            }
-            
-            .seccion-1 input{
-              -webkit-appearance: none;
-              appearance: none;
-              width: 50vmax;
-              
-              border-radius: 5px;
-                          
-            }
-            .seccion-1 input:hover{
-              background-color: rgba(20, 19, 19, 0.219);
-            }
-
-            .seccion-1 input:focus{
-              background-color: white;
-            }
-            h4{
-              font-size: 2.1vmax;
-            }
-            h1{
-              font-size: 2.6vmax;
-              text-decoration: underline;
-            }
-            label{
-              font-size:1.8vmax;
-            }
-
-            .seccion-1 input + label + span + i  {
-              position: relative;
-            }
-
-            span::before{
-              position: absolute;
-              content: "Requerido";
-              color: white;
-              background-color: black;
-              padding: 5px;
-              right: 0;
-              bottom:20px;
-              font-size: 1.7vmax;
-            }
-            
-
-            .seccion-1 input + i{
-              position: absolute;
-              right: -10px;
-              bottom: 0px;
-            }
-
-            .seccion-1 input:invalid + i::before{
-              position: absolute; 
-              content: "✘";
-              color:red;
-              font-size: 1em;
-              bottom:-3px;
-              right: 0;
-
-            }
-            .seccion-1 input:valid +  i::before{
-              position: absolute; 
-              content: "✔";
-              color:green;
-              font-size: 1em;
-              bottom:-3px;
-              right: 0;
-              
-            }
           
-            .seccion-1 input:out-of-range + i::before{
-              position: absolute;
-              content: "Mayor a 12 años";
-              color: white;
-              background-color: red;
-              padding:8px;
-              font-size: 1.7vmax;
-              right: 0;
-              bottom:20px;
-              width: 15vmax;
-            
-            }
-           
-            .seccion-1 input:invalid:out-of-range{
-              border-color: red;
-              background-color: rgba(255,0,0, 0.080);
-            }
-
-            /* ingredientes */
-    
-            .seccion-2 input[type="checkbox"]{
-              appearance: none;
-              position: relative;
-                            
-            }
-
-            .seccion-2 input[type="checkbox"]{
-              
-              border: 2.5px solid black;
-              width: 1.5vmax;
-              height: 1.5vmax;
-            }
-
-            .seccion-2 input[type="checkbox"]::after{
-              position: absolute;
-              
-              
-            }
-
-            .seccion-2 input[type="checkbox"]:checked::after  {
-                content: "✔";
-                color: green;
-                bottom: -3px;
-                font-size: 2vmax;
-            }
-            .seccion-2 input[type="checkbox"]:checked + label{
-              color: green;
-              font-size: 2vmax;
-              
-            }
-            .seccion-2 input[type="checkbox"]:checked{
-              border: 2.5px solid green;
-            }
-            /* hornos */
-
-             input[type="radio"]{
-              position: relative;
-              appearance: none;
-              
-            }
-
-            input[type="radio"]{
-              position: relative;
-              border: 2px solid black;
-              border-radius: 50%;
-              width: 1.5vmax;
-              height: 1.5vmax;
-            }
-            input[type="radio"]::before{
-              position: absolute;
-              visibility: hidden;
-              right:-2.2px;
-              top: -3.5px;
-              
-            }
-
-            input[type="radio"]:checked:before{
-              
-              visibility: visible;
-              content: "☻";
-              color: green;
-              font-size: 1.5vmax;
-              
-              
-            }
-            input[type="radio"]:checked{
-              border-color: green;
-            }
-            /* tipo pizza */
-
-            .tipo-pizza input[type="checkbox"]{
-              
-              position:relative; 
-              appearance: none;
-
-            } 
-            .tipo-pizza input[type="checkbox"]::before{
-              content: "☢";
-              color: yellowgreen;
-              font-size: 2vmax;
-              
-            }
-
-
-            .tipo-pizza input[type="checkbox"]:checked::before{
-                content: "❤";
-                font-size: 2vmax;
-                color: red;
-
-            }
-            .tipo-pizza input[type="checkbox"]:checked + label{
-
-              color: red;
-            }
-
-            .div-button{
-              display: flex;
-              
-              justify-content: center;
-            }
-
-             button{
-              width: 28vmax;
-              border-radius: 8px solid black;
-              background-color: black;
-              color: white;
-              font-size: 1.8vmax;
-              font-weight: bold;
-              box-shadow: 0px 0px 2px 2px black;
-
-            }
-           button:hover{
-                background-color: rgba(0, 0, 0, 0.80);
-            }
 
 
 
@@ -256,7 +23,7 @@
 <body>
   <form>
     <fieldset>
-      <legend>Pizzeross del Años</legend>
+      <legend>Pizzeross del Año</legend>
       <h4>Los campos obligatorios tiene etiqueta de  "requerido".</h4>
       <ul class="seccion-1"><li>
         <label for="fname">Primer Nombre: </label><span class="range-1"></span><br>
@@ -275,14 +42,14 @@
       <br>
       <li>
         <label for="email" class="tercer-label">Correo electronico </label><!-- <span></span> --><br>
-        <input id="email" name="email" type="email" required>
+        <input id="email" name="email" type="email"  required>
         <i class="email-3"></i>
       
       </li></ul>
     
       <br><hr>
       
-      <h1>Receta de Pizza Favorita</h1>
+      <h1>Receta de Pizzas Favorita</h1>
       <h4>Elije tus ingredintes:</h4>
       <ul class="seccion-2"><li>
         <input class="pizza" type="checkbox" name="" id="Harina">
