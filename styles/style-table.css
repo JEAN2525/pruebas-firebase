@@ -4,10 +4,19 @@
     table-layout:fixed;
     width:100%;
     border-collapse: collapse;
-    
-
+    box-shadow:  
+                 2px 5px 1px 0px rgba(0,0,0,0.7 ),
+                 3px 6px 1px 0px fuchsia,
+                 4px 7px 1px 0px rgba(0,0,0,0.7 ),
+                 5px 8px 1px 0px black,
+                 6px 9px 1px 0px fuchsia;
+                  
+                 
 }
-
+div{
+    float: right;
+    shape-outside: url(../imagenes/imagen-mario-prueba.jpg);
+}
 td,th{
     letter-spacing: 1px;
     
@@ -15,8 +24,7 @@ td,th{
 thead,tfoot{
     background: url(../imagenes/imagen-table2.jpg) no-repeat center/cover;
     font-size: large;
-    color: white;
-    
+    color: white;  
 }
 
 thead th, tfoot th, tfoot td {
@@ -64,6 +72,8 @@ caption{
     font-size: 20px;
 
 }
+
+
 
 
 
