@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    
+    background-color: cadetblue;
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: stretch ; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: auto;    
+    
+}
+
+
+img{
+    justify-content: center;
+    border-radius: 80%;
+}
+.flex-item:nth-child(odd){
+    background-color: gray;
+}
+
+h2{
+    text-align: center;
+    
+}
+ul{
+    display: flex;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+    margin-left: 1em;
+    background-color: blanchedalmond;
+    color: black;
+    border-radius: 5px;
+    padding: 6px;
+    width: 4rem;
+    line-height: 2;
+    justify-content: center;
+    
+  
+    
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+
+    
+}
+
+/* dados */
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    background-color: black;
+    font-size: 50px;
+}
+
+[class^="cara"]{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    margin-top: 5px;
+    padding: 10px;
+    
+}
+.punto{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    
+
+   
+}
+.cara1{
+    justify-content: center;
+    align-items: center;
+}
+.cara2{
+    justify-content: space-between;
+ 
+}
+
+.cara2 .punto:nth-child(2){
+    align-self: flex-end;
+}
+.cara3{
+    justify-content: space-between;
+}
+.cara3 .punto:nth-child(2){
+    align-self: center;
+   
+}
+
+.cara3 .punto:nth-child(3){
+    align-self: flex-end;
+}
+
+.cara4{
+    justify-content: space-between;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cara5{
+    justify-content: space-between;
+}
+
+.cara5 .punto{
+    align-self: center;
+}
+
+.cara6{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cara6 .column{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* ejemplo dado 2 */
+
+[class^="frente"]{
+    width: 200px;
+    height: 200px;
+    background-color: darkblue;
+    margin-top: 10px;
+    display: flex;
+}
+
+.circulo{
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+    
+}
+
+.frente1{
+      
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.frente2{
+    justify-content: space-between;
+
+}
+.frente2 .circulo:nth-child(2){
+
+    align-self: flex-end;
+
+}
+.frente3{
+    justify-content: space-between;
+}
+
+.frente3 .circulo:nth-child(2){
+    justify-content: center;    
+    align-self: center;
+    
+}
+.frente3 .circulo:nth-child(3){
+    justify-content: flex-end;
+    align-self: flex-end;
+    
+}
+
+.frente4{
+    justify-content: space-between;
+}
+
+.frente5{
+    justify-content: space-between;
+}
+.circulo-grupo{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.frente5 .circulo{
+    align-self: center;
+}
+
+.frente6{
+    justify-content: space-between;
+}
