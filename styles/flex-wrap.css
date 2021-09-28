@@ -1,0 +1,38 @@
+.container{
+
+    display: flex;
+    flex-flow: row wrap ;
+    justify-content:space-between ;
+    background-color: teal;
+    height: 500px;
+    align-content: baseline;
+
+    
+    
+}
+
+
+.item{
+    flex: 0 0 23%;
+    background-color: tomato;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 2%;
+    
+}
+
+.item:nth-child(even){
+
+    background-color: lightblue;
+}
+
+.item-1{
+    order: 1;
+}
+.item-2{
+    order: 3;
+}
+.item-3{
+    order: 5;
+}

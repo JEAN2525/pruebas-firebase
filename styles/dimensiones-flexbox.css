@@ -1,0 +1,49 @@
+html{
+
+    
+}
+body{
+    
+}
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: teal;
+    display: flex;
+    
+   
+    
+   
+    
+
+    
+}
+
+[class^="item"]{
+    background-color: thistle;
+    flex-basis: 200px;
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: darkblue;
+    flex-shrink: 1;
+    
+    
+
+
+}
+[class^="item"]:nth-child(odd){
+   background-color: tomato;
+}
+[class^="item"]:nth-child(2){
+  flex-shrink: 3;
+}
+[class^="item"]:nth-child(3){
+    flex-shrink: 4;
+}
+[class^="item"]:nth-child(4){
+    flex-shrink: 5;
+}
+
